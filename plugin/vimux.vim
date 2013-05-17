@@ -172,6 +172,7 @@ function VimuxClearRunnerHistory()
 endfunction
 
 ruby << EOF
+$VERBOSE=nil
 class TmuxSession
   def initialize(session, window, pane)
     @session = session
